@@ -1,0 +1,133 @@
+ion-content {
+  --background: url('../../assets/img/koenigsegg.jpg') no-repeat fixed center/cover;
+}
+
+ion-header {
+  padding: 10px;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+
+  ion-toolbar {
+    --background: black; // Couleur de fond de l'en-tête
+  }
+
+  ion-title {
+    color: #ffffff; // Couleur du texte du titre
+    margin-left: 50px;
+  }
+
+  ion-buttons[slot="start"] {
+    ion-button {
+      ion-img {
+        width: 25%; // Ajustez la largeur de l'icône/logo selon vos besoins
+      }
+    }
+  }
+}
+
+ion-nav {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  padding: 10px;
+  width: 100%;
+  height: 11%;
+  top: 100px; /* Ajustez la valeur en fonction de la hauteur de votre en-tête */
+  font-size: larger;
+
+  a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 30px;
+    padding: 5px 10px;
+    border-radius: 5px;
+
+    &:hover {
+      color: rgb(252, 67, 11);
+      margin-left: 1px;
+      border-bottom: 1px solid white;
+      border-radius: 5px;
+      background-color: rgba(0, 0, 0, 0.5);
+      transition: 0.5s;
+    }
+
+    &.connexion:hover {
+      background-color: rgb(28, 28, 202);
+      color: #fff;
+    }
+
+    .options-list {
+      display: none;
+      position: absolute;
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      z-index: 999;
+      list-style: none;
+      margin: 10px 0 0 0; /* Ajustez la marge ici pour l'espacement */
+
+      li {
+        cursor: pointer;
+        padding: 5px;
+
+        &:hover {
+          background-color: #555;
+        }
+      }
+    }
+
+    &:hover .options-list {
+      display: block;
+    }
+  }
+}
+
+.slogan {
+  text-align: center;
+  font-size: x-large;
+  margin-top: 220px;
+  color: #fff;
+}
+
+// Dans votre fichier .scss (par exemple, products.scss)
+
+.product-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 20px; // Ajustez l'espacement entre les cartes en fonction de vos besoins
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+ion-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+ion-card img {
+  width: 100%;
+  height: 200px; // Ajustez la hauteur en fonction de vos besoins
+  object-fit: cover;
+}
+
+ion-card-content {
+  margin-top: auto; // Place le bouton en bas de la carte
+}
+
+.buy-button {
+  width: 100%;
+  max-width: 200px; // Ajustez la largeur maximale en fonction de vos besoins
+  margin-top: 10px;
+  background-color: #4CAF50;
+  color: white;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.buy-button:hover{
+  background-color: rgb(16, 165, 16);
+}
