@@ -1,0 +1,1161 @@
+{
+	"info": {
+		"_postman_id": "7b2cdd59-529f-4c25-a155-a5173c1073c8",
+		"name": "WS-Rojo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30480637"
+	},
+	"item": [
+		{
+			"name": "GetAll Users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetById Users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/users/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"users",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Users",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"login\": \"Toavina\",\r\n    \"pwd\": \"Toavina\"\r\n}\r\n\r\n{\r\n    \"id\": 2,\r\n    \"login\": \"Clement\",\r\n    \"pwd\": \"Clement\"\r\n}\r\n\r\n{\r\n    \"id\": 3,\r\n    \"login\": \"Mickael\",\r\n    \"pwd\": \"Mickael\"\r\n}\r\n\r\n{\r\n    \"id\": 4,\r\n    \"login\": \"Ifaliantsoa\",\r\n    \"pwd\": \"Ifaliantsoa\"\r\n}\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Users",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"login\": \"Toavina\",\r\n    \"pwd\": \"Toavina\"\r\n}\r\n\r\n{\r\n    \"id\": 2,\r\n    \"login\": \"Clement\",\r\n    \"pwd\": \"Clement\"\r\n}\r\n\r\n{\r\n    \"id\": 3,\r\n    \"login\": \"Mickael\",\r\n    \"pwd\": \"Mickael\"\r\n}\r\n\r\n{\r\n    \"id\": 4,\r\n    \"login\": \"Ifaliantsoa\",\r\n    \"pwd\": \"Ifaliantsoa\"\r\n}\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Users",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/users/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"users",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAll Category",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/category",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"category"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetById Category",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/category/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"category",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Category",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"category\": \"SUV\"\r\n}\r\n{\r\n    \"id\": 2,\r\n    \"category\": \"berline\"\r\n}\r\n{\r\n    \"id\": 3,\r\n    \"category\": \"coupe\"\r\n}\r\n{\r\n    \"id\": 4,\r\n    \"category\": \"decapotable\"\r\n}\r\n{\r\n    \"id\": 5,\r\n    \"category\": \"break\"\r\n}\r\n{\r\n    \"id\": 6,\r\n    \"category\": \"monospace\"\r\n}\r\n{\r\n    \"id\": 7,\r\n    \"category\": \"citadine\"\r\n}\r\n{\r\n    \"id\": 8,\r\n    \"category\": \"crossover\"\r\n}\r\n{\r\n    \"id\": 9,\r\n    \"category\": \"compacte\"\r\n}\r\n{\r\n    \"id\": 10,\r\n    \"category\": \"sportive\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/category",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"category"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Category",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"category\": \"SUV\"\r\n}\r\n{\r\n    \"id\": 2,\r\n    \"category\": \"berline\"\r\n}\r\n{\r\n    \"id\": 3,\r\n    \"category\": \"coupe\"\r\n}\r\n{\r\n    \"id\": 4,\r\n    \"category\": \"decapotable\"\r\n}\r\n{\r\n    \"id\": 5,\r\n    \"category\": \"break\"\r\n}\r\n{\r\n    \"id\": 6,\r\n    \"category\": \"monospace\"\r\n}\r\n{\r\n    \"id\": 7,\r\n    \"category\": \"citadine\"\r\n}\r\n{\r\n    \"id\": 8,\r\n    \"category\": \"crossover\"\r\n}\r\n{\r\n    \"id\": 9,\r\n    \"category\": \"compacte\"\r\n}\r\n{\r\n    \"id\": 10,\r\n    \"category\": \"sportive\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/category",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"category"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Category",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/category/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"category",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAll Color",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/color",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"color"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetById Color",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/color/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"color",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Color",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"color\": \"rouge\"\r\n}\r\n{\r\n    \"id\": 2,\r\n    \"color\": \"noir\"\r\n}\r\n{\r\n    \"id\": 3,\r\n    \"color\": \"bleu\"\r\n}\r\n{\r\n    \"id\": 4,\r\n    \"color\": \"gris\"\r\n}\r\n{\r\n    \"id\": 5,\r\n    \"color\": \"vert\"\r\n}\r\n{\r\n    \"id\": 6,\r\n    \"color\": \"jaune\"\r\n}\r\n{\r\n    \"id\": 7,\r\n    \"color\": \"blanc\"\r\n}\r\n{\r\n    \"id\": 8,\r\n    \"color\": \"violet\"\r\n}\r\n{\r\n    \"id\": 9,\r\n    \"color\": \"rose\"\r\n}\r\n{\r\n    \"id\": 10,\r\n    \"color\": \"orange\"\r\n}\r\n{\r\n    \"id\": 11,\r\n    \"color\": \"marron\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/color",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"color"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Color",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"color\": \"rouge\"\r\n}\r\n{\r\n    \"id\": 2,\r\n    \"color\": \"noir\"\r\n}\r\n{\r\n    \"id\": 3,\r\n    \"color\": \"bleu\"\r\n}\r\n{\r\n    \"id\": 4,\r\n    \"color\": \"gris\"\r\n}\r\n{\r\n    \"id\": 5,\r\n    \"color\": \"vert\"\r\n}\r\n{\r\n    \"id\": 6,\r\n    \"color\": \"jaune\"\r\n}\r\n{\r\n    \"id\": 7,\r\n    \"color\": \"blanc\"\r\n}\r\n{\r\n    \"id\": 8,\r\n    \"color\": \"violet\"\r\n}\r\n{\r\n    \"id\": 9,\r\n    \"color\": \"rose\"\r\n}\r\n{\r\n    \"id\": 10,\r\n    \"color\": \"orange\"\r\n}\r\n{\r\n    \"id\": 11,\r\n    \"color\": \"marron\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/color",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"color"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Color",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/color/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"color",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAll Brand",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/brand",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"brand"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetById Brand",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/brand/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"brand",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Brand",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"brand\": \"Toyota\"\r\n}\r\n{\r\n    \"id\": 2,\r\n    \"brand\": \"Ford\"\r\n}\r\n{\r\n    \"id\": 3,\r\n    \"brand\": \"BMW\"\r\n}\r\n{\r\n    \"id\": 4,\r\n    \"brand\": \"Mercedes-Benz\"\r\n}\r\n{\r\n    \"id\": 5,\r\n    \"brand\": \"Honda\"\r\n}\r\n{\r\n    \"id\": 6,\r\n    \"brand\": \"Volkswagen\"\r\n}\r\n{\r\n    \"id\": 7,\r\n    \"brand\": \"Tesla\"\r\n}\r\n{\r\n    \"id\": 8,\r\n    \"brand\": \"Nissan\"\r\n}\r\n{\r\n    \"id\": 9,\r\n    \"brand\": \"Audi\"\r\n}\r\n{\r\n    \"id\": 10,\r\n    \"brand\": \"Chevrolet\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/brand",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"brand"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Brand",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"brand\": \"Toyota\"\r\n}\r\n{\r\n    \"id\": 2,\r\n    \"brand\": \"Ford\"\r\n}\r\n{\r\n    \"id\": 3,\r\n    \"brand\": \"BMW\"\r\n}\r\n{\r\n    \"id\": 4,\r\n    \"brand\": \"Mercedes-Benz\"\r\n}\r\n{\r\n    \"id\": 5,\r\n    \"brand\": \"Honda\"\r\n}\r\n{\r\n    \"id\": 6,\r\n    \"brand\": \"Volkswagen\"\r\n}\r\n{\r\n    \"id\": 7,\r\n    \"brand\": \"Tesla\"\r\n}\r\n{\r\n    \"id\": 8,\r\n    \"brand\": \"Nissan\"\r\n}\r\n{\r\n    \"id\": 9,\r\n    \"brand\": \"Audi\"\r\n}\r\n{\r\n    \"id\": 10,\r\n    \"brand\": \"Chevrolet\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/brand",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"brand"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Brand",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/brand/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"brand",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAll Car",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/car",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"car"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetById Car",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/car/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"car",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Car",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"matricule\": \"ADE145\",\r\n    \"anneefabrication\": 2005,\r\n    \"kilometrage\": 5,\r\n    \"moteur\": \"a plat\",\r\n    \"transmission\": \"manuelle\",\r\n    \"etat\": 9200,\r\n    \"infos\": \"Voiture familisale spacieuse,faible consommation ,entretien a jour.\",\r\n    \"id_brand\": 2,\r\n    \"id_category\": 1,\r\n    \"id_color\": 2\r\n}\r\n\r\n{\r\n    \"id\": 2,\r\n    \"matricule\": \"QCS698\",\r\n    \"anneefabrication\": 2010,\r\n    \"kilometrage\": 7,\r\n    \"moteur\": \"en etoile\",\r\n    \"transmission\": \"automatique\",\r\n    \"etat\": 12000,\r\n    \"infos\": \"Elegant,faible kilometrage\",\r\n    \"id_brand\": 1,\r\n    \"id_category\": 2,\r\n    \"id_color\": 4\r\n}\r\n\r\n{\r\n    \"id\": 3,\r\n    \"matricule\": \"HGD452\",\r\n    \"anneefabrication\": 2004,\r\n    \"kilometrage\": 8,\r\n    \"moteur\": \"en V\",\r\n    \"transmission\": \"integrale\",\r\n    \"etat\": 6500,\r\n    \"infos\": \"Petit prix,economique en carburant et ideal pour les deplacements urbains\",\r\n    \"id_brand\": 7,\r\n    \"id_category\": 6,\r\n    \"id_color\": 7\r\n}\r\n\r\n{\r\n    \"id\": 4,\r\n    \"matricule\": \"FGK698\",\r\n    \"anneefabrication\": 1999,\r\n    \"kilometrage\": 6,\r\n    \"moteur\": \"a injection directe\",\r\n    \"transmission\": \"par propulsion\",\r\n    \"etat\": 25600,\r\n    \"infos\": \"robuste,equipement moderne,historique en entretien complet \",\r\n    \"id_brand\": 10,\r\n    \"id_category\": 8,\r\n    \"id_color\": 1\r\n}\r\n\r\n{\r\n    \"id\": 5,\r\n    \"matricule\": \"MLB781\",\r\n    \"anneefabrication\": 2005,\r\n    \"kilometrage\": 6,\r\n    \"moteur\": \"a turbocompresseur\",\r\n    \"transmission\": \"electrique\",\r\n    \"etat\": 210300,\r\n    \"infos\": \"Compact et agile, cette voiture offre confort et efficacite\",\r\n    \"id_brand\": 5,\r\n    \"id_category\": 4,\r\n    \"id_color\": 3\r\n}\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/car",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"car"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Car",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"matricule\": \"ADE145\",\r\n    \"anneefabrication\": 2005,\r\n    \"kilometrage\": 5,\r\n    \"moteur\": \"a plat\",\r\n    \"transmission\": \"manuelle\",\r\n    \"etat\": 9200,\r\n    \"infos\": \"Voiture familisale spacieuse,faible consommation ,entretien a jour.\",\r\n    \"id_brand\": 2,\r\n    \"id_category\": 1,\r\n    \"id_color\": 2\r\n}\r\n\r\n{\r\n    \"id\": 2,\r\n    \"matricule\": \"QCS698\",\r\n    \"anneefabrication\": 2010,\r\n    \"kilometrage\": 7,\r\n    \"moteur\": \"en etoile\",\r\n    \"transmission\": \"automatique\",\r\n    \"etat\": 12000,\r\n    \"infos\": \"Elegant,faible kilometrage\",\r\n    \"id_brand\": 1,\r\n    \"id_category\": 2,\r\n    \"id_color\": 4\r\n}\r\n\r\n{\r\n    \"id\": 3,\r\n    \"matricule\": \"HGD452\",\r\n    \"anneefabrication\": 2004,\r\n    \"kilometrage\": 8,\r\n    \"moteur\": \"en V\",\r\n    \"transmission\": \"integrale\",\r\n    \"etat\": 6500,\r\n    \"infos\": \"Petit prix,economique en carburant et ideal pour les deplacements urbains\",\r\n    \"id_brand\": 7,\r\n    \"id_category\": 6,\r\n    \"id_color\": 7\r\n}\r\n\r\n{\r\n    \"id\": 4,\r\n    \"matricule\": \"FGK698\",\r\n    \"anneefabrication\": 1999,\r\n    \"kilometrage\": 6,\r\n    \"moteur\": \"a injection directe\",\r\n    \"transmission\": \"par propulsion\",\r\n    \"etat\": 25600,\r\n    \"infos\": \"robuste,equipement moderne,historique en entretien complet \",\r\n    \"id_brand\": 10,\r\n    \"id_category\": 8,\r\n    \"id_color\": 1\r\n}\r\n\r\n{\r\n    \"id\": 5,\r\n    \"matricule\": \"MLB781\",\r\n    \"anneefabrication\": 2005,\r\n    \"kilometrage\": 6,\r\n    \"moteur\": \"a turbocompresseur\",\r\n    \"transmission\": \"electrique\",\r\n    \"etat\": 210300,\r\n    \"infos\": \"Compact et agile, cette voiture offre confort et efficacite\",\r\n    \"id_brand\": 5,\r\n    \"id_category\": 4,\r\n    \"id_color\": 3\r\n}\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/car",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"car"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Car",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/car/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"car",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAll Annonce",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/annonce",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"annonce"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetbyId Annonce",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/annonce/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"annonce",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Annonce",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"id_car\": 1,\r\n    \"datepub\": \"2023-11-27\",\r\n    \"prix\": 1750000,\r\n    \"id_user\": 2\r\n}\r\n\r\n{\r\n    \"id\": 2,\r\n    \"id_car\": 3,\r\n    \"datepub\": \"2024-01-05\",\r\n    \"prix\": 2600000,\r\n    \"id_user\": 4\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/annonce",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"annonce"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Annonce",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"id_car\": 1,\r\n    \"datepub\": \"2023-11-27\",\r\n    \"prix\": 1750000,\r\n    \"id_user\": 2\r\n}\r\n\r\n{\r\n    \"id\": 2,\r\n    \"id_car\": 3,\r\n    \"datepub\": \"2024-01-05\",\r\n    \"prix\": 2600000,\r\n    \"id_user\": 4\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/annonce",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"annonce"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Annonce",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/annonce/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"annonce",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAll Magasin",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/magasin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"magasin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetById Magasin",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/magasin/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"magasin",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Magasin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"status\": null,\r\n    \"id_user\": 2,\r\n    \"id_car\": 1\r\n}\r\n\r\n{\r\n    \"id\": 2,\r\n    \"status\": null,\r\n    \"id_user\": 4,\r\n    \"id_car\": 3\r\n}\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/magasin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"magasin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Magasin",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"status\": null,\r\n    \"id_user\": 2,\r\n    \"id_car\": 1\r\n}\r\n\r\n{\r\n    \"id\": 2,\r\n    \"status\": null,\r\n    \"id_user\": 4,\r\n    \"id_car\": 3\r\n}\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/magasin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"magasin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Magasin",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/magasin/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"magasin",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAll Commission",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/commission",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"commission"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetById Commission",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/commission/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"commission",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Commission",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"id_category\": 1,\r\n    \"prixpourcentage\": 10\r\n}\r\n\r\n{\r\n    \"id\": 2,\r\n    \"id_category\": 2,\r\n    \"prixpourcentage\": 12.5\r\n}\r\n\r\n{\r\n    \"id\": 3,\r\n    \"id_category\": 3,\r\n    \"prixpourcentage\": 15.25\r\n}\r\n\r\n{\r\n    \"id\": 4,\r\n    \"id_category\": 4,\r\n    \"prixpourcentage\": 20\r\n}\r\n\r\n{\r\n    \"id\": 5,\r\n    \"id_category\": 5,\r\n    \"prixpourcentage\": 22.5\r\n}\r\n\r\n{\r\n    \"id\": 6,\r\n    \"id_category\": 6,\r\n    \"prixpourcentage\": 11\r\n}\r\n\r\n{\r\n    \"id\": 7,\r\n    \"id_category\": 7,\r\n    \"prixpourcentage\": 14.25\r\n}\r\n\r\n{\r\n    \"id\": 8,\r\n    \"id_category\": 8,\r\n    \"prixpourcentage\": 22.75\r\n}\r\n\r\n{\r\n    \"id\": 9,\r\n    \"id_category\": 9,\r\n    \"prixpourcentage\": 20.5\r\n}\r\n\r\n{\r\n    \"id\": 10,\r\n    \"id_category\": 10,\r\n    \"prixpourcentage\": 13\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/commission",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"commission"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Commission",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"id_category\": 1,\r\n    \"prixpourcentage\": 10\r\n}\r\n\r\n{\r\n    \"id\": 2,\r\n    \"id_category\": 2,\r\n    \"prixpourcentage\": 12.5\r\n}\r\n\r\n{\r\n    \"id\": 3,\r\n    \"id_category\": 3,\r\n    \"prixpourcentage\": 15.25\r\n}\r\n\r\n{\r\n    \"id\": 4,\r\n    \"id_category\": 4,\r\n    \"prixpourcentage\": 20\r\n}\r\n\r\n{\r\n    \"id\": 5,\r\n    \"id_category\": 5,\r\n    \"prixpourcentage\": 22.5\r\n}\r\n\r\n{\r\n    \"id\": 6,\r\n    \"id_category\": 6,\r\n    \"prixpourcentage\": 11\r\n}\r\n\r\n{\r\n    \"id\": 7,\r\n    \"id_category\": 7,\r\n    \"prixpourcentage\": 14.25\r\n}\r\n\r\n{\r\n    \"id\": 8,\r\n    \"id_category\": 8,\r\n    \"prixpourcentage\": 22.75\r\n}\r\n\r\n{\r\n    \"id\": 9,\r\n    \"id_category\": 9,\r\n    \"prixpourcentage\": 20.5\r\n}\r\n\r\n{\r\n    \"id\": 10,\r\n    \"id_category\": 10,\r\n    \"prixpourcentage\": 13\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/commission/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"commission",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Commission",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/commission/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"commission",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAll Vendu",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/vendu",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"vendu"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetById Vendu",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/vendu/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"vendu",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Vendu",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\": 1,\r\n        \"id_annonce\":2,\r\n        \"id_commission\": 7,\r\n        \"datevente\":\"2024-01-10\"\r\n}\r\n  ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/vendu",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"vendu"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Vendu",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\": 1,\r\n        \"id_annonce\":2,\r\n        \"id_commission\": 7,\r\n        \"datevente\":\"2024-01-10\"\r\n}\r\n  ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/vendu",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"vendu"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Vendu",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/vendu/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"vendu",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAll Achat",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/achat",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"achat"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetById Achat",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/achat/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"achat",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Achat",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"dateachat\": \"2024-01-10\",\r\n    \"id_car\": 3,\r\n    \"id_user\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/achat",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"achat"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Achat",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"dateachat\": \"2024-01-10\",\r\n    \"id_car\": 3,\r\n    \"id_user\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/achat",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"achat"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Achat",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/achat/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"achat",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
