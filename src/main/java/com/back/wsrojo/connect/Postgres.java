@@ -14,7 +14,7 @@ public class Postgres {
         Connection conn = null;
         try {
             Class.forName("org.postgresql.Driver");
-            conn = DriverManager.getConnection("jdbc:postgresql://localhost/wsrojo", "postgres", "toavina");
+            conn = DriverManager.getConnection("jdbc:postgresql://monorail.proxy.rlwy.net:20388/railway", "postgres", "AgBeaA36Eg4gG*-6312dC5aB16g4c-G-");
             if( conn!= null){
             System.out.println("Connected to the PostgreSQL server successfully.");
             }
